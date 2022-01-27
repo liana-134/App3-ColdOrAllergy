@@ -41,9 +41,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
         function allergyAdd(){
-            allergy_count = allergy_count + 1;
-		alert(allergy_count);
-
+            allergy_count = allergy_count + 1; <!-- removed alert -->
         }
 
         function coldAdd(){
@@ -97,8 +95,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         	<p>Are your eyes watery or itchy?</p>    <! –– added a tab that somehow made the code work -->
-			<a href="#two" onclick = "allergyAdd()" class="w3-btn w3-black"> Yes</a> <! –– yes button -->
-			<a href="#two" onclick = "coldAdd()" class="w3-btn w3-black">No</a> <! -- no button -->
+			<a href="#two" onclick = "allergyAdd()" class="w3-btn w3-black"> Yes</a> <! –– yes button, allergy add -->
+			<a href="#two" onclick = "coldAdd()" class="w3-btn w3-black">No</a> <! -- no button, cold add -->
     	</div>
 </div>
 
@@ -108,7 +106,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Content of page 2 goes here.</p>
+		<p>Do you have a fever?</p> <!-- changed content -->
+		<a href="#two" onclick = "coldAdd()" class="w3-btn w3-black"> Yes</a> <! –– yes button, cold add -->
+		<a href="#two" onclick = "allergyAdd()" class="w3-btn w3-black">No</a> <! -- no button, allergy add-->
 	</div>
 </div>	
 
