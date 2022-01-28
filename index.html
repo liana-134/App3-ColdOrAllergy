@@ -48,8 +48,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	
-	var allergyPercent = 100*(allergy_count/6);
-	var coldPercent = 100*(cold_count/6);
+	var allergyPercent = 100*(allergy_count/(allergy_count+cold_count));
+	var coldPercent = 100*(cold_count/(allergy_count+cold_count));
 	var resultText = document.getElementById("results");
 	
 	function display_results(){
