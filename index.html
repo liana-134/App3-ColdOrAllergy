@@ -49,7 +49,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	
 	function display_results(){  	//function that shows the results of user's choices
-		var resultText = document.getElementById("results1");	//-refers to results page button//NOT SURE
+		var resultText = document.getElementById("results1");	//returns an element with a specified value, references the id="result1" in results page code
 		var allergyPercent = 100*(allergy_count/(allergy_count+cold_count));	//calculating percent of choices that indicate allergy
 		var coldPercent = 100*(cold_count/(allergy_count+cold_count));		//calculating percent of choices that indicate cold
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;	//displays results with text and probability of allergy or cold
@@ -185,7 +185,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Results</h1>	<!--results page heading-->
 	</div>
 	<div id="content" class="w3-container">
-		<p id="results1"></p>		 <!--specifies a unique id for an element//NOT SURE-->
+		<p id="results1"></p>		 <!--specifies a unique id for an element, this is modified in the JS code and results are displayed here
 			<a onclick = "display_results();" class="w3-btn w3-black"> Results</a>		<!--results button to display results-->
 	</div>
 </div>
